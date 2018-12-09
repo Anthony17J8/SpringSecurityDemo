@@ -13,6 +13,7 @@
     <properties>
         <springframework.version>5.1.1.RELEASE</springframework.version>
         <springsecurity.version>5.1.1.RELEASE</springsecurity.version>
+        <hibernate.version>5.3.6.Final</hibernate.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -41,6 +42,27 @@
             <version>${springsecurity.version}</version>
         </dependency>
 
+        <!-- Spring Transactions -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+
+        <!-- Spring ORM -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+
+        <!-- Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
         <!-- Add MySQL and C3P0 support -->
         <dependency>
             <groupId>mysql</groupId>
@@ -59,6 +81,13 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-taglibs</artifactId>
             <version>${springsecurity.version}</version>
+        </dependency>
+
+        <!-- Hibernate validator -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.13.Final</version>
         </dependency>
 
         <!-- Servlet, JSP and JSTL support -->
